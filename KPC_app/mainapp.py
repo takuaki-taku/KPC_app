@@ -9,5 +9,6 @@ st.text('これはPythonで京田辺ピックルボールクラブのメンバ�
 st.text('This is the app for member of Kyotanabe Pickleball Club. It is just for test')
 
 #画像
-image = Image.open('/mount/src/kpc_app/Data/picklepicture.jpeg')
+image_path = "./Data/picklepicture.jpeg"
+image = Image.open('image_path')
 st.image(image, width=200)
