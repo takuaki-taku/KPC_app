@@ -1,6 +1,8 @@
 import streamlit as st
 from PIL import Image
 import datetime
+import pandas as pd
+
 
 
 st.title('Kyotanabe Pickleball Club')
@@ -64,3 +66,7 @@ with st.form(key='profile_form'):
         st.text(f'Ages:{age_category}')
         st.text(f'Hobby:{",".join(hobby)}')
 
+
+#データ分析関連
+df = pd.read_csv('averagetemp.csv', index_col='month')
+st.line_chart(df)
