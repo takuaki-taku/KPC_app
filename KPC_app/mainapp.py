@@ -11,3 +11,4 @@ st.text('This is the app for member of Kyotanabe Pickleball Club. It is just for
 #画像
 image = Image.open('./data/picklepicture.jpeg')
 st.image(image, width=200)
+
