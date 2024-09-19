@@ -1,6 +1,7 @@
 import streamlit as st
 import datetime
 
+
 with st.form(key='profile_form'):
     #テキストボックス
     name = st.text_input('name')

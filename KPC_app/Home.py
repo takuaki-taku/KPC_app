@@ -15,6 +15,7 @@ image = Image.open('KPC_app/Data/KPClogo.png')
 st.image(image, width=200)
 
 #データ分析関連
+st.subheader('メンバーの増加率')
 df = pd.read_csv('KPC_app/Data/averagetemp.csv', index_col='month')
-
 st.line_chart(df)
+
