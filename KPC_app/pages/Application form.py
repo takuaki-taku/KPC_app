@@ -1,7 +1,8 @@
 import streamlit as st
 import datetime
 
-
+st.header('申し込みフォーム')
+st.text('以下に情報を入力してください')
 with st.form(key='profile_form'):
     #テキストボックス
     name = st.text_input('name')
